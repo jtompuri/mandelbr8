@@ -92,10 +92,6 @@ Default `max_iter = 32` gives 16 contour bands.
 
 ![VIC-20](media/mandel8-vic20.png)
 
-### Earlier multi-target gallery
-
-![multi-target gallery](media/mandel8-20250228.jpg)
-
 ## Resolutions
 
 | Target                       | Lo-res preview        | Hi-res render                                    |
