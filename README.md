@@ -98,6 +98,12 @@ PET has no bitmap mode; the renderer uses PETSCII glyphs for shading.
 
 ![PET text mode](media/mandel8-pet-text.png)
 
+### CBM-II / B128 (80×25 text)
+
+CBM-II uses an 80-column text-mode render with PETSCII shading.
+
+![CBM-II text mode](media/mandel8-cbmii.png)
+
 ### Deep zoom (C64 with SuperCPU, raised `max_iter`)
 
 A SuperCPU lifts the per-iteration cost enough that very deep zooms
