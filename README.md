@@ -92,6 +92,27 @@ Default `max_iter = 32` gives 16 contour bands.
 
 ![VIC-20](media/mandel8-vic20.png)
 
+### PET (40×25 text, color)
+
+PET has no bitmap mode; the renderer uses PETSCII glyphs for shading.
+
+![PET text mode](media/mandel8-pet-text.png)
+
+### Deep zoom (C64 with SuperCPU, raised `max_iter`)
+
+A SuperCPU lifts the per-iteration cost enough that very deep zooms
+become practical. With `max_iter` raised via Fire+Right, more iter
+bands appear and fine fractal detail at the precision floor stays
+visible.
+
+Multicolor:
+
+![C64 SuperCPU multicolor deep zoom](media/mandel8-c64-super-cpu.png)
+
+Contour:
+
+![C64 SuperCPU contour deep zoom](media/mandel8-c64-super-cpu-contour.png)
+
 ## Resolutions
 
 | Target                       | Lo-res preview        | Hi-res render                                    |
