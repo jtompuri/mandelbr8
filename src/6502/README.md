@@ -31,23 +31,28 @@ BUILD_BENCHMARK            = 0   ; Render-time measurement
 
 # BUILD THE BINARY
 
+Use a short target-specific output name (under 16 characters so it
+loads on Commodore disk systems without renaming): `c64.prg`,
+`c128.prg`, `ted.prg`, `vic20.prg`, `pet.prg`, `cbm2.prg`, `atari.xex`,
+`beeb.ssd`. For the C64 contour build use `c64-contour.prg`.
+
 ### Commodore machines:
 
-Build with TASS:
-
-```64tass -o "mandelbr8.prg" -L "mandelbr8.lst" -a "mandelbr8.asm"```
+```
+64tass -o "c64.prg" -L "c64.lst" -a "mandelbr8.asm"
+```
 
 ### Atari machines:
 
-Build with TASS:
-
-```64tass --output-exec=main --atari-xex -o "mandelbr8.xex" -L "mandelbr8.lst" -a "mandelbr8.asm"```
+```
+64tass --output-exec=main --atari-xex -o "atari.xex" -L "atari.lst" -a "mandelbr8.asm"
+```
 
 ### BBC Micro B:
 
-Build with TASS:
-
-```64tass -b -o "mandelbr8.ssd" -L "mandelbr8.lst" -a "mandelbr8.asm"```
+```
+64tass -b -o "beeb.ssd" -L "beeb.lst" -a "mandelbr8.asm"
+```
 
 This will create a minimalistic bootable SSD file.
 
@@ -55,7 +60,7 @@ This will create a minimalistic bootable SSD file.
 
 ### Commodore machines:
 ```
-LOAD"mandelbr8",8,1
+LOAD"C64",8,1
 RUN
 ```
 

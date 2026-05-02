@@ -111,13 +111,9 @@ become practical. With `max_iter` raised via Fire+Right, more iter
 bands appear and fine fractal detail at the precision floor stays
 visible.
 
-Multicolor:
-
-![C64 SuperCPU multicolor deep zoom](media/mandel8-c64-super-cpu.png)
-
-Contour:
-
-![C64 SuperCPU contour deep zoom](media/mandel8-c64-super-cpu-contour.png)
+| Multicolor | Contour |
+|---|---|
+| ![C64 SuperCPU multicolor](media/mandel8-c64-super-cpu.png) | ![C64 SuperCPU contour](media/mandel8-c64-super-cpu-contour.png) |
 
 ## Resolutions
 
@@ -151,24 +147,24 @@ The target machine is selected by the `BUILD_*` flags at the top of
 
 ```bash
 # C64 multicolor (default)
-64tass -o build/mandelbr8-c64.prg -a src/6502/mandelbr8.asm
+64tass -o build/c64.prg -a src/6502/mandelbr8.asm
 
 # C64 contour (set BUILD_HIRES_CONTOUR = 1 in source first)
-64tass -o build/mandelbr8-c64-contour.prg -a src/6502/mandelbr8.asm
+64tass -o build/c64-contour.prg -a src/6502/mandelbr8.asm
 
 # C128, Plus/4, VIC-20, PET, CBM-II  (toggle the matching BUILD_* flag)
-64tass -o build/mandelbr8-c128.prg  -a src/6502/mandelbr8.asm
-64tass -o build/mandelbr8-ted.prg   -a src/6502/mandelbr8.asm
-64tass -o build/mandelbr8-vic20.prg -a src/6502/mandelbr8.asm
-64tass -o build/mandelbr8-pet.prg   -a src/6502/mandelbr8.asm
-64tass -o build/mandelbr8-cbm2.prg  -a src/6502/mandelbr8.asm
+64tass -o build/c128.prg  -a src/6502/mandelbr8.asm
+64tass -o build/ted.prg   -a src/6502/mandelbr8.asm
+64tass -o build/vic20.prg -a src/6502/mandelbr8.asm
+64tass -o build/pet.prg   -a src/6502/mandelbr8.asm
+64tass -o build/cbm2.prg  -a src/6502/mandelbr8.asm
 
 # Atari XL/XE
 64tass --output-exec=main --atari-xex \
-       -o build/mandelbr8-atari.xex -a src/6502/mandelbr8.asm
+       -o build/atari.xex -a src/6502/mandelbr8.asm
 
 # BBC Micro B (bootable SSD)
-64tass -b -o build/mandelbr8-beeb.ssd -a src/6502/mandelbr8.asm
+64tass -b -o build/beeb.ssd -a src/6502/mandelbr8.asm
 ```
 
 Tunable build options at the top of `src/6502/mandelbr8.asm`:
