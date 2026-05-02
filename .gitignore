@@ -1,0 +1,35 @@
+# Build artifacts
+*.prg
+*.lst
+*.xex
+*.ssd
+*.bin
+*.o
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*~
+.vscode/
+.idea/
+
+# Claude Code session data
+.claude/
+
+# Internal project notes (kept locally, not published)
+CLAUDE.md
+GIT_SETUP.md
+OPTIMIZATION_PLAN.md
+
+# Temporary
+/tmp/
+*.tmp
+
+# Allow release artifacts despite the *.prg/*.xex/*.ssd rules above
+!release/*.prg
+!release/*.xex
+!release/*.ssd
+mandelbr8.bundle
